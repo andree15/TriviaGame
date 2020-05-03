@@ -63,9 +63,18 @@ startGame: function(){
 
    trivia.nextQuestion();
 
+},
+
+nextQuestion : function(){
+    trivia.timer = 20
+    $('#timer').text(trivia.timer);
+
+let questionContent = Object.values(trivia.questions) [trivia.currentSet];
+$('#question').text(questionContent)
+
+
+
 }
-
-
 
 
 
